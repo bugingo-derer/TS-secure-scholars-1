@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: cursive;
+  src: url('../public/fonts/JBCursive-V3-Bold.ttf');
+}
+
+.header {
+  font-family: cursive;
+}
+
+.bgimage{
+  background-image: url('./assets/graduation.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c1c1c1, #888);
+  border-radius: 10px;
+  border: 2px solid #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a1a1a1, #666);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #2C3D3D #A7AAAA;
+}
+
+
+.animating{
+  animation: example 2s ease-in-out infinite;
+}
+
+@keyframes example {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 1;
+  }
+}
